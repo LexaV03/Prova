@@ -1,0 +1,608 @@
+Microsoft Windows [versão 10.0.22621.1702]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\thiag>$ ssh-keygen -t ed25519 -C "thiagohsbruno@hotmail.com"
+'$' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\thiag>
+
+C:\Users\thiag>ssh-keygen -t ed25519 -C "thiagohsbruno@hotmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (C:\Users\thiag/.ssh/id_ed25519):
+Created directory 'C:\\Users\\thiag/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\thiag/.ssh/id_ed25519
+Your public key has been saved in C:\Users\thiag/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:9NJ/yxlbrkvnnCDS2l8231lcAR2xKrpXa2vVnKhuCMs thiagohsbruno@hotmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|             ..oo|
+|              ...|
+|        .      o |
+|       . o    . .|
+|        S o. ...+|
+|       . .o..o ++|
+|      . oo.o+.*+=|
+|       E .=+.B+@B|
+|         o+o+oO=*|
++----[SHA256]-----+
+
+C:\Users\thiag>cd .ssh
+
+C:\Users\thiag\.ssh>dir
+ O volume na unidade C é OS
+ O Número de Série do Volume é 3222-AFA8
+
+ Pasta de C:\Users\thiag\.ssh
+
+10/06/2023  20:23    <DIR>          .
+10/06/2023  20:23    <DIR>          ..
+10/06/2023  20:23               419 id_ed25519
+10/06/2023  20:23               108 id_ed25519.pub
+               2 arquivo(s)            527 bytes
+               2 pasta(s)   19.557.314.560 bytes disponíveis
+
+C:\Users\thiag\.ssh>cat id_ed25519.pub
+'cat' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\thiag\.ssh>type id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINsNOmXXcbk387kbC23T33eWqab8isisnaO1hfOXDnLc thiagohsbruno@hotmail.com
+
+C:\Users\thiag\.ssh>
+
+C:\Users\thiag\.ssh>
+
+C:\Users\thiag\.ssh>
+
+C:\Users\thiag\.ssh>cd ..
+
+C:\Users\thiag>cd Documents
+
+C:\Users\thiag\Documents>mkdir Projeto
+
+C:\Users\thiag\Documents>cd Projeto
+
+C:\Users\thiag\Documents\Projeto>git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+
+C:\Users\thiag\Documents\Projeto>git clone git@github.com:LexaV03/Prova.git
+Cloning into 'Prova'...
+The authenticity of host 'github.com (20.201.28.151)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+
+C:\Users\thiag\Documents\Projeto>dir
+ O volume na unidade C é OS
+ O Número de Série do Volume é 3222-AFA8
+
+ Pasta de C:\Users\thiag\Documents\Projeto
+
+10/06/2023  20:26    <DIR>          .
+10/06/2023  20:26    <DIR>          ..
+10/06/2023  20:26    <DIR>          Prova
+               0 arquivo(s)              0 bytes
+               3 pasta(s)   19.521.314.816 bytes disponíveis
+
+C:\Users\thiag\Documents\Projeto>cd Prova
+
+C:\Users\thiag\Documents\Projeto\Prova>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\thiag\Documents\Projeto\Prova>git add *
+
+C:\Users\thiag\Documents\Projeto\Prova>git commit -m "add:Prova"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'thiag@LexaM.(none)')
+
+C:\Users\thiag\Documents\Projeto\Prova>git config --global user.name "Thiago Henrique Silva Bruno"
+
+C:\Users\thiag\Documents\Projeto\Prova>git config --global user.email "thiagohsbruno@hotmail.com""
+
+C:\Users\thiag\Documents\Projeto\Prova>git config --global user.email "thiagohsbruno@hotmail.com"
+
+C:\Users\thiag\Documents\Projeto\Prova>git commit -m "add:Prova"
+[main (root-commit) d81d9b0] add:Prova
+ 429 files changed, 688113 insertions(+)
+ create mode 100644 PROVATOPICO/.vs/PROVATOPICO/FileContentIndex/70aaba7b-7859-45c2-a9cb-b7c3f3a2eaf1.vsidx
+ create mode 100644 PROVATOPICO/.vs/PROVATOPICO/FileContentIndex/b3427369-1c08-4cba-9a03-149978d4c915.vsidx
+ create mode 100644 PROVATOPICO/.vs/PROVATOPICO/FileContentIndex/b3a90daf-9d97-4fc1-b303-163486e69973.vsidx
+ create mode 100644 PROVATOPICO/.vs/PROVATOPICO/FileContentIndex/eea4a352-810f-4d32-9acf-e01c78e828dd.vsidx
+ create mode 100644 PROVATOPICO/.vs/PROVATOPICO/FileContentIndex/read.lock
+ create mode 100644 PROVATOPICO/.vs/PROVATOPICO/v17/.suo
+ create mode 100644 PROVATOPICO/App.config
+ create mode 100644 PROVATOPICO/FormAgendar.Designer.cs
+ create mode 100644 PROVATOPICO/FormAgendar.cs
+ create mode 100644 PROVATOPICO/FormAgendar.resx
+ create mode 100644 PROVATOPICO/FormLogin.Designer.cs
+ create mode 100644 PROVATOPICO/FormLogin.cs
+ create mode 100644 PROVATOPICO/FormLogin.resx
+ create mode 100644 PROVATOPICO/FormPaciente.Designer.cs
+ create mode 100644 PROVATOPICO/FormPaciente.cs
+ create mode 100644 PROVATOPICO/FormPaciente.resx
+ create mode 100644 PROVATOPICO/FormPrinci.Designer.cs
+ create mode 100644 PROVATOPICO/FormPrinci.cs
+ create mode 100644 PROVATOPICO/FormPrinci.resx
+ create mode 100644 PROVATOPICO/FormRegistro.Designer.cs
+ create mode 100644 PROVATOPICO/FormRegistro.cs
+ create mode 100644 PROVATOPICO/FormRegistro.resx
+ create mode 100644 PROVATOPICO/PROVATOPICO.csproj
+ create mode 100644 PROVATOPICO/PROVATOPICO.sln
+ create mode 100644 PROVATOPICO/Program.cs
+ create mode 100644 PROVATOPICO/Properties/AssemblyInfo.cs
+ create mode 100644 PROVATOPICO/Properties/Resources.Designer.cs
+ create mode 100644 PROVATOPICO/Properties/Resources.resx
+ create mode 100644 PROVATOPICO/Properties/Settings.Designer.cs
+ create mode 100644 PROVATOPICO/Properties/Settings.settings
+ create mode 100644 PROVATOPICO/agendar.cs
+ create mode 100644 PROVATOPICO/bin/Debug/BouncyCastle.Crypto.dll
+ create mode 100644 PROVATOPICO/bin/Debug/BouncyCastle.Crypto.xml
+ create mode 100644 PROVATOPICO/bin/Debug/EntityFramework.SqlServer.dll
+ create mode 100644 PROVATOPICO/bin/Debug/EntityFramework.SqlServer.xml
+ create mode 100644 PROVATOPICO/bin/Debug/EntityFramework.dll
+ create mode 100644 PROVATOPICO/bin/Debug/EntityFramework.xml
+ create mode 100644 PROVATOPICO/bin/Debug/Google.Protobuf.dll
+ create mode 100644 PROVATOPICO/bin/Debug/Google.Protobuf.pdb
+ create mode 100644 PROVATOPICO/bin/Debug/Google.Protobuf.xml
+ create mode 100644 PROVATOPICO/bin/Debug/K4os.Compression.LZ4.Streams.dll
+ create mode 100644 PROVATOPICO/bin/Debug/K4os.Compression.LZ4.Streams.xml
+ create mode 100644 PROVATOPICO/bin/Debug/K4os.Compression.LZ4.dll
+ create mode 100644 PROVATOPICO/bin/Debug/K4os.Compression.LZ4.xml
+ create mode 100644 PROVATOPICO/bin/Debug/K4os.Hash.xxHash.dll
+ create mode 100644 PROVATOPICO/bin/Debug/K4os.Hash.xxHash.xml
+ create mode 100644 PROVATOPICO/bin/Debug/MySql.Data.dll
+ create mode 100644 PROVATOPICO/bin/Debug/MySql.Data.xml
+ create mode 100644 PROVATOPICO/bin/Debug/PROVATOPICO.exe
+ create mode 100644 PROVATOPICO/bin/Debug/PROVATOPICO.exe.config
+ create mode 100644 PROVATOPICO/bin/Debug/PROVATOPICO.pdb
+ create mode 100644 PROVATOPICO/bin/Debug/System.Buffers.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.Buffers.xml
+ create mode 100644 PROVATOPICO/bin/Debug/System.Data.SQLite.EF6.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.Data.SQLite.Linq.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.Data.SQLite.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.Data.SQLite.xml
+ create mode 100644 PROVATOPICO/bin/Debug/System.IO.Pipelines.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.IO.Pipelines.xml
+ create mode 100644 PROVATOPICO/bin/Debug/System.Memory.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.Memory.xml
+ create mode 100644 PROVATOPICO/bin/Debug/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+ create mode 100644 PROVATOPICO/bin/Debug/System.Threading.Tasks.Extensions.dll
+ create mode 100644 PROVATOPICO/bin/Debug/System.Threading.Tasks.Extensions.xml
+ create mode 100644 PROVATOPICO/bin/Debug/x64/SQLite.Interop.dll
+ create mode 100644 PROVATOPICO/bin/Debug/x86/SQLite.Interop.dll
+ create mode 100644 PROVATOPICO/cadastrar.cs
+ create mode 100644 PROVATOPICO/conexao.cs
+ create mode 100644 PROVATOPICO/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 PROVATOPICO/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+ create mode 100644 PROVATOPICO/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.FormAgendar.resources
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.FormLogin.resources
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.FormPaciente.resources
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.FormPrinci.resources
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.Properties.Resources.resources
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.csproj.AssemblyReference.cache
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.csproj.CopyComplete
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.csproj.CoreCompileInputs.cache
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.csproj.FileListAbsolute.txt
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.csproj.GenerateResource.cache
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.exe
+ create mode 100644 PROVATOPICO/obj/Debug/PROVATOPICO.pdb
+ create mode 100644 PROVATOPICO/packages.config
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/EntityFramework.6.4.4.nupkg
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/Icon.png
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/build/EntityFramework.DefaultItems.props
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/build/EntityFramework.props
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/build/EntityFramework.targets
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/build/Microsoft.Data.Entity.Build.Tasks.dll
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/build/netcoreapp3.0/EntityFramework.props
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/build/netcoreapp3.0/EntityFramework.targets
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/buildTransitive/EntityFramework.props
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/buildTransitive/EntityFramework.targets
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/buildTransitive/netcoreapp3.0/EntityFramework.props
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/buildTransitive/netcoreapp3.0/EntityFramework.targets
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/content/net40/App.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/content/net40/App.config.transform
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/content/net40/Web.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/content/net40/Web.config.transform
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/net40/EntityFramework.SqlServer.dll
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/net40/EntityFramework.SqlServer.xml
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/net40/EntityFramework.dll
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/net40/EntityFramework.xml
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/net45/EntityFramework.SqlServer.dll
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/net45/EntityFramework.SqlServer.xml
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/net45/EntityFramework.dll
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/net45/EntityFramework.xml
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/netstandard2.1/EntityFramework.SqlServer.dll
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/netstandard2.1/EntityFramework.SqlServer.xml
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/netstandard2.1/EntityFramework.dll
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/lib/netstandard2.1/EntityFramework.xml
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/EntityFramework6.PS2.psd1
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/EntityFramework6.PS2.psm1
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/EntityFramework6.psd1
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/EntityFramework6.psm1
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/about_EntityFramework6.help.txt
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/init.ps1
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/install.ps1
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/net40/any/ef6.exe
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/net40/any/ef6.pdb
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/net40/win-x86/ef6.exe
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/net40/win-x86/ef6.pdb
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/net45/any/ef6.exe
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/net45/any/ef6.pdb
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/net45/win-x86/ef6.exe
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/net45/win-x86/ef6.pdb
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/netcoreapp3.0/any/ef6.dll
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/netcoreapp3.0/any/ef6.pdb
+ create mode 100644 PROVATOPICO/packages/EntityFramework.6.4.4/tools/netcoreapp3.0/any/ef6.runtimeconfig.json
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/Google.Protobuf.3.21.9.nupkg
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/net45/Google.Protobuf.dll
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/net45/Google.Protobuf.pdb
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/net45/Google.Protobuf.xml
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/net5.0/Google.Protobuf.dll
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/net5.0/Google.Protobuf.pdb
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/net5.0/Google.Protobuf.xml
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/netstandard1.1/Google.Protobuf.dll
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/netstandard1.1/Google.Protobuf.pdb
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/netstandard1.1/Google.Protobuf.xml
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/netstandard2.0/Google.Protobuf.dll
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/netstandard2.0/Google.Protobuf.pdb
+ create mode 100644 PROVATOPICO/packages/Google.Protobuf.3.21.9/lib/netstandard2.0/Google.Protobuf.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/K4os.Compression.LZ4.1.3.5.nupkg
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/net462/K4os.Compression.LZ4.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/net462/K4os.Compression.LZ4.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/net5.0/K4os.Compression.LZ4.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/net5.0/K4os.Compression.LZ4.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/net6.0/K4os.Compression.LZ4.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/net6.0/K4os.Compression.LZ4.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/netstandard2.0/K4os.Compression.LZ4.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/netstandard2.0/K4os.Compression.LZ4.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/netstandard2.1/K4os.Compression.LZ4.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.1.3.5/lib/netstandard2.1/K4os.Compression.LZ4.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/K4os.Compression.LZ4.Streams.1.3.5.nupkg
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/net462/K4os.Compression.LZ4.Streams.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/net462/K4os.Compression.LZ4.Streams.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/net5.0/K4os.Compression.LZ4.Streams.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/net5.0/K4os.Compression.LZ4.Streams.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/net6.0/K4os.Compression.LZ4.Streams.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/net6.0/K4os.Compression.LZ4.Streams.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/netstandard2.0/K4os.Compression.LZ4.Streams.dll create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/netstandard2.0/K4os.Compression.LZ4.Streams.xml create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/netstandard2.1/K4os.Compression.LZ4.Streams.dll create mode 100644 PROVATOPICO/packages/K4os.Compression.LZ4.Streams.1.3.5/lib/netstandard2.1/K4os.Compression.LZ4.Streams.xml create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/K4os.Hash.xxHash.1.0.8.nupkg
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/net462/K4os.Hash.xxHash.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/net462/K4os.Hash.xxHash.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/net5.0/K4os.Hash.xxHash.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/net5.0/K4os.Hash.xxHash.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/net6.0/K4os.Hash.xxHash.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/net6.0/K4os.Hash.xxHash.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/netstandard2.0/K4os.Hash.xxHash.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/netstandard2.0/K4os.Hash.xxHash.xml
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/netstandard2.1/K4os.Hash.xxHash.dll
+ create mode 100644 PROVATOPICO/packages/K4os.Hash.xxHash.1.0.8/lib/netstandard2.1/K4os.Hash.xxHash.xml
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/MySql.Data.8.0.33.nupkg
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/net462/MySql.Data.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/net462/MySql.Data.xml
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/net48/MySql.Data.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/net48/MySql.Data.xml
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/net6.0/MySql.Data.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/net6.0/MySql.Data.xml
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/net7.0/MySql.Data.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/net7.0/MySql.Data.xml
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/netstandard2.0/MySql.Data.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/netstandard2.0/MySql.Data.xml
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/netstandard2.1/MySql.Data.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/lib/netstandard2.1/MySql.Data.xml
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/logo-mysql-170x115.png
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/runtimes/win-x64/native/comerr64.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/runtimes/win-x64/native/gssapi64.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/runtimes/win-x64/native/k5sprt64.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/runtimes/win-x64/native/krb5_64.dll
+ create mode 100644 PROVATOPICO/packages/MySql.Data.8.0.33/runtimes/win-x64/native/krbcc64.dll
+ create mode 100644 PROVATOPICO/packages/Portable.BouncyCastle.1.9.0/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/Portable.BouncyCastle.1.9.0/Portable.BouncyCastle.1.9.0.nupkg
+ create mode 100644 PROVATOPICO/packages/Portable.BouncyCastle.1.9.0/lib/net40/BouncyCastle.Crypto.dll
+ create mode 100644 PROVATOPICO/packages/Portable.BouncyCastle.1.9.0/lib/net40/BouncyCastle.Crypto.xml
+ create mode 100644 PROVATOPICO/packages/Portable.BouncyCastle.1.9.0/lib/netstandard2.0/BouncyCastle.Crypto.dll
+ create mode 100644 PROVATOPICO/packages/Portable.BouncyCastle.1.9.0/lib/netstandard2.0/BouncyCastle.Crypto.xml
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0.nupkg
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net20/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net20/x64/SQLite.Interop.dll create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net20/x86/SQLite.Interop.dll create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net40/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net40/x64/SQLite.Interop.dll create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net40/x86/SQLite.Interop.dll create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net45/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net45/x64/SQLite.Interop.dll create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net45/x86/SQLite.Interop.dll create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net451/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net451/x64/SQLite.Interop.dll
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net451/x86/SQLite.Interop.dll
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net46/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net46/x64/SQLite.Interop.dll create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/build/net46/x86/SQLite.Interop.dll create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/buildTransitive/net20/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/buildTransitive/net40/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/buildTransitive/net45/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/buildTransitive/net451/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net20/System.Data.SQLite.dll
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net20/System.Data.SQLite.dll.altconfig
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net20/System.Data.SQLite.xml
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net40/System.Data.SQLite.dll
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net40/System.Data.SQLite.dll.altconfig
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net40/System.Data.SQLite.xml
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net45/System.Data.SQLite.dll
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net45/System.Data.SQLite.dll.altconfig
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net45/System.Data.SQLite.xml
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net451/System.Data.SQLite.dll
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net451/System.Data.SQLite.dll.altconfig
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net451/System.Data.SQLite.xml
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net46/System.Data.SQLite.dll
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net46/System.Data.SQLite.dll.altconfig
+ create mode 100644 PROVATOPICO/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0/lib/net46/System.Data.SQLite.xml
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/LICENSE.TXT
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/System.Buffers.4.5.1.nupkg
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/THIRD-PARTY-NOTICES.TXT
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/lib/net461/System.Buffers.dll
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/lib/net461/System.Buffers.xml
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/lib/netcoreapp2.0/_._
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/lib/netstandard1.1/System.Buffers.dll
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/lib/netstandard1.1/System.Buffers.xml
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/lib/netstandard2.0/System.Buffers.dll
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/lib/netstandard2.0/System.Buffers.xml
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/lib/uap10.0.16299/_._
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/ref/net45/System.Buffers.dll
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/ref/net45/System.Buffers.xml
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/ref/netcoreapp2.0/_._
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/ref/netstandard1.1/System.Buffers.dll
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/ref/netstandard1.1/System.Buffers.xml
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/ref/netstandard2.0/System.Buffers.dll
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/ref/netstandard2.0/System.Buffers.xml
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/ref/uap10.0.16299/_._
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/useSharedDesignerContext.txt
+ create mode 100644 PROVATOPICO/packages/System.Buffers.4.5.1/version.txt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Core.1.0.117.0/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Core.1.0.117.0/System.Data.SQLite.Core.1.0.117.0.nupkg
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/System.Data.SQLite.EF6.1.0.117.0.nupkg
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net40/app.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net40/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net40/web.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net40/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net45/app.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net45/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net45/web.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net45/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net451/app.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net451/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net451/web.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net451/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net46/app.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net46/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net46/web.config.install.xdt
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/content/net46/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/lib/net40/System.Data.SQLite.EF6.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/lib/net45/System.Data.SQLite.EF6.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/lib/net451/System.Data.SQLite.EF6.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/lib/net46/System.Data.SQLite.EF6.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/lib/netstandard2.1/System.Data.SQLite.EF6.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/tools/net40/install.ps1
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/tools/net45/install.ps1
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/tools/net451/install.ps1
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.EF6.1.0.117.0/tools/net46/install.ps1
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/System.Data.SQLite.Linq.1.0.117.0.nupkg
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net20/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net20/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net40/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net40/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net45/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net45/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net451/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net451/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net46/app.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/content/net46/web.config.transform
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/lib/net20/System.Data.SQLite.Linq.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/lib/net40/System.Data.SQLite.Linq.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/lib/net45/System.Data.SQLite.Linq.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/lib/net451/System.Data.SQLite.Linq.dll
+ create mode 100644 PROVATOPICO/packages/System.Data.SQLite.Linq.1.0.117.0/lib/net46/System.Data.SQLite.Linq.dll
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/Icon.png
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/LICENSE.TXT
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/System.IO.Pipelines.5.0.2.nupkg
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/THIRD-PARTY-NOTICES.TXT
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/lib/net461/System.IO.Pipelines.dll
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/lib/net461/System.IO.Pipelines.xml
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/lib/netcoreapp3.0/System.IO.Pipelines.dll
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/lib/netcoreapp3.0/System.IO.Pipelines.xml
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/lib/netstandard1.3/System.IO.Pipelines.dll
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/lib/netstandard1.3/System.IO.Pipelines.xml
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/lib/netstandard2.0/System.IO.Pipelines.dll
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/lib/netstandard2.0/System.IO.Pipelines.xml
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/ref/netcoreapp2.0/System.IO.Pipelines.dll
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/ref/netcoreapp2.0/System.IO.Pipelines.xml
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/useSharedDesignerContext.txt
+ create mode 100644 PROVATOPICO/packages/System.IO.Pipelines.5.0.2/version.txt
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/LICENSE.TXT
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/System.Memory.4.5.5.nupkg
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/THIRD-PARTY-NOTICES.TXT
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/lib/net461/System.Memory.dll
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/lib/net461/System.Memory.xml
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/lib/netcoreapp2.1/_._
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/lib/netstandard1.1/System.Memory.dll
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/lib/netstandard1.1/System.Memory.xml
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/lib/netstandard2.0/System.Memory.dll
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/lib/netstandard2.0/System.Memory.xml
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/ref/netcoreapp2.1/_._
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/useSharedDesignerContext.txt
+ create mode 100644 PROVATOPICO/packages/System.Memory.4.5.5/version.txt
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/LICENSE.TXT
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/System.Numerics.Vectors.4.5.0.nupkg
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/THIRD-PARTY-NOTICES.TXT
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/MonoAndroid10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/MonoTouch10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/net46/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/net46/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/netcoreapp2.0/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/netstandard1.0/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/netstandard1.0/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/netstandard2.0/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/netstandard2.0/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/uap10.0.16299/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/xamarinios10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/xamarinmac20/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/xamarintvos10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/lib/xamarinwatchos10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/MonoAndroid10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/MonoTouch10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/net45/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/net45/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/net46/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/net46/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/netcoreapp2.0/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/netstandard1.0/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/netstandard1.0/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/netstandard2.0/System.Numerics.Vectors.dll
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/netstandard2.0/System.Numerics.Vectors.xml
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/uap10.0.16299/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/xamarinios10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/xamarinmac20/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/xamarintvos10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/ref/xamarinwatchos10/_._
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/useSharedDesignerContext.txt
+ create mode 100644 PROVATOPICO/packages/System.Numerics.Vectors.4.5.0/version.txt
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/Icon.png
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/LICENSE.TXT
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/System.Runtime.CompilerServices.Unsafe.6.0.0.nupkg
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/THIRD-PARTY-NOTICES.TXT
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/buildTransitive/netcoreapp3.1/_._
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/net461/System.Runtime.CompilerServices.Unsafe.dll
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/net461/System.Runtime.CompilerServices.Unsafe.xml
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml
+ create mode 100644 PROVATOPICO/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/useSharedDesignerContext.txt
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/.signature.p7s
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/LICENSE.TXT
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/System.Threading.Tasks.Extensions.4.5.4.nupkg
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/THIRD-PARTY-NOTICES.TXT
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/MonoAndroid10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/MonoTouch10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/net461/System.Threading.Tasks.Extensions.dll
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/net461/System.Threading.Tasks.Extensions.xml
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netcoreapp2.1/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netstandard1.0/System.Threading.Tasks.Extensions.dll
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netstandard1.0/System.Threading.Tasks.Extensions.xml
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netstandard2.0/System.Threading.Tasks.Extensions.dll
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netstandard2.0/System.Threading.Tasks.Extensions.xml
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/xamarinios10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/xamarinmac20/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/xamarintvos10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/lib/xamarinwatchos10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/ref/MonoAndroid10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/ref/MonoTouch10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/ref/netcoreapp2.1/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/ref/xamarinios10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/ref/xamarinmac20/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/ref/xamarintvos10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/ref/xamarinwatchos10/_._
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/useSharedDesignerContext.txt
+ create mode 100644 PROVATOPICO/packages/System.Threading.Tasks.Extensions.4.5.4/version.txt
+
+C:\Users\thiag\Documents\Projeto\Prova>git push
+Enumerating objects: 410, done.
+Counting objects: 100% (410/410), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (381/381), done.
+Writing objects: 100% (410/410), 47.02 MiB | 3.85 MiB/s, done.
+Total 410 (delta 97), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (97/97), done.
+To github.com:LexaV03/Prova.git
+ * [new branch]      main -> main
+
+C:\Users\thiag\Documents\Projeto\Prova>
